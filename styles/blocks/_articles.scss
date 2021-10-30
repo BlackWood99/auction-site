@@ -1,0 +1,49 @@
+
+
+.articles {
+    background-color: rgba(248, 248, 248, 0.86);
+    margin-top: 20px;
+    padding: 20px 30px;
+    border-radius: 3px;
+    max-height: 680px;
+    overflow-y: scroll;
+
+    &__item {
+        color: #5b5b5b;
+        margin-bottom: 40px;
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button {
+                padding: 10px 50px;
+                letter-spacing: 3px;
+                font-weight: 500;
+            }
+            .btn-buy {
+                background-color: #fff;
+                border: 1px solid #2d9cdb;
+                color: #2d9cdb;
+            }
+        }
+        .text {
+            margin-top: 20px;
+            p {
+                margin-bottom: 10px;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 17px;
+            }
+        }
+        .heading {
+            margin-bottom: 20px;
+            font-size: 36px;
+            line-height: 17px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+}

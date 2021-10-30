@@ -1,0 +1,27 @@
+@import "../elements/elements";
+@import "../blocks/header";
+@import "../blocks/articles";
+@import "../blocks/form-search";
+@import "../blocks/lot-list";
+@import "../blocks/footer";
+
+.main {
+	padding: 25px 0 30px;
+
+	.aside {
+		padding-right: 25px;
+		border-right: 1px solid #c4c4c4;
+	}
+	.content {
+		color: #95a1bb;
+	}
+}
+
+.copyright {
+	margin: 5px auto 15px;
+	text-align: center;
+	color: #95a1bb;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+}

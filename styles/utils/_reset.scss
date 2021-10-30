@@ -1,0 +1,23 @@
+body {
+	font-family: Rubik;
+}
+a {
+	text-decoration: none;
+	font-family: Rubik, serif;
+}
+input, button, textarea, select {
+	border: 1px solid #95a1bb;
+	outline: none;
+}
+input {
+	border-radius: 4px;
+}
+select, input[type=checkbox] {
+	cursor: pointer;
+}
+
+.my-container {
+	max-width: 1400px;
+	width: 100%;
+	margin: 0 auto;
+}
