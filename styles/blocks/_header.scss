@@ -1,17 +1,25 @@
 .header {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     height: 70px;
     padding-bottom: 15px;
     border-bottom: 2px solid #2d9cdb;
 
+    @include respond-to(440px) {
+        height: 120px;
+    }
+
     &__logo {
         width: 190px;
-        margin-left: 2%;
-
+        
         svg {
             width: 100%;
             height: 100%;
+        }
+
+        @include respond-to(390px) {
+            width: 110px;
         }
     }
     &__nav {
@@ -20,12 +28,21 @@
         justify-content: space-between;
         margin-left: 10px;
 
+        @include respond-to(440px) {
+            order: 1;
+            flex-direction: row;
+        }
+
         .link {
             font-size: 12px;
             font-weight: 600;
             line-height: 20px;
             color: #363940;
             text-transform: uppercase;
+
+            @include respond-to(440px) {
+                margin-right: 10px;
+            }
         }
     }
     &__link-signIn {

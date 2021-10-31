@@ -6,6 +6,23 @@
 		padding: 13px 0;
 		border-top: 2px solid #2d9cdb;
 		border-bottom: 2px solid #2d9cdb;
+
+		@include respond-to(tablet) {
+			> div {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.first-block {
+		display: flex;
+		flex-direction: column;
+
+		@include respond-to(mobile) {
+            flex-direction: row;
+			align-items: center;
+			justify-content: space-around;
+        }
 	}
 
 	&__logo {
@@ -26,7 +43,21 @@
 			color: #363940;
 			font-size: 16px;
 			margin-bottom: 10px;
+
+			@include respond-to(mobile) {
+				margin-right: 10px;
+			}
+			@include respond-to(360px) {
+				margin-right: 0;
+			}
 		}
+
+		@include respond-to(mobile) {
+            flex-direction: row;
+        }
+		@include respond-to(360px) {
+            flex-direction: column;
+        }
 	}
 	&__description {
 		p {
@@ -62,10 +93,12 @@
 		}
 		.socials {
 			display: flex;
+			flex-wrap: wrap;
 			margin-top: 10px;
 
 			&__item {
 				margin-right: 28px;
+				margin-bottom: 5px;
 
 				&:last-child {
 					margin-right: 0;
@@ -77,7 +110,7 @@
 		color: #5b5b5b;
 		font-size: 27px;
 		font-weight: 500;
-		line-height: 17px;
+		line-height: 22px;
 		letter-spacing: 1px;
 		margin-bottom: 16px;
 	}

@@ -1,0 +1,24 @@
+@mixin respond-to($media)
+  @if $media == laptop
+    @media only screen and (max-width: 1400px)
+      @content
+ 
+  @if $media == big-tablet
+    @media only screen and (max-width: 1200px)
+      @content
+ 
+  @if $media == tablet
+    @media only screen and (max-width: 992px)
+      @content
+ 
+  @if $media == small-tablet
+    @media only screen and (max-width: 768px)
+      @content
+
+  @if $media == mobile
+    @media only screen and (max-width: 578px)
+      @content
+
+  @else
+    @media only screen and (max-width: $media)
+      @content
