@@ -37,10 +37,10 @@
 				height: 100%;
 				padding-left: 35px;
 				padding-bottom: 3px;
-				border: 1px solid #cad1e1;
+				border: 1px solid $gray-300;
 
 				&:focus {
-					border: 2px solid #2d9cdb;
+					border: 2px solid $bluePrimary;
 					outline: none;
 				}
 
@@ -73,16 +73,16 @@
 				max-width: 160px;
 				padding: 0 5px;
 				margin-right: 10px;
-				border: 1px solid #cad1e1;
+				border: 1px solid $gray-300;
 				text-align: center;
 				font-size: 16px;
 				font-weight: 400;
 				line-height: 22px;
 			}
 			.btn-filter {
-				background-color: #bdbdbd;
+				background-color: $gray-600;
 				&_active {
-					background-color: #2d9cdb;
+					background-color: $bluePrimary;
 				}
 				.arrow {
 					position: relative;
@@ -141,7 +141,7 @@
 				background-color: transparent;
 				width: 10px;
 				height: 10px;
-				border: 1px solid #95a1bb;
+				border: 1px solid $gray-400;
 				border-top: none;
 				border-left: none;
 				transform: rotate(45deg);
@@ -177,8 +177,8 @@
 			.select-prop {
 				width: 270px;
 				outline: none;
-				border: 1px solid #95a1bb;
-				color: #95a1bb;
+				border: 1px solid $gray-400;
+				color: $gray-400;
 				border-radius: 3px;
 			}
 			.prop-values {
@@ -187,7 +187,7 @@
 				input {
 					max-width: 110px;
 					padding-left: 5px;
-					border: 1px solid #95a1bb;
+					border: 1px solid $gray-400;
 					border-radius: 0;
 
 					&:last-child {
@@ -197,7 +197,7 @@
 			}
 			.found-lots {
 				padding: 12px 33px;
-				background-color: #bdbdbd;
+				background-color: $gray-600;
 				color: #fff;
 				font-size: 22px;
 				text-transform: uppercase;
@@ -207,7 +207,7 @@
 				outline: none;
 				border: none;
 				background-color: transparent;
-				color: #ff5656;
+				color: $red-200;
 				margin-left: 80px;
 			}
 		}

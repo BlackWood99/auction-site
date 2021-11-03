@@ -28,8 +28,8 @@
             }
             .btn-buy {
                 background-color: #fff;
-                border: 1px solid #2d9cdb;
-                color: #2d9cdb;
+                border: 1px solid $bluePrimary;
+                color: $bluePrimary;
 
                 @include respond-to(1110px) {
                     margin-bottom: 10px;
