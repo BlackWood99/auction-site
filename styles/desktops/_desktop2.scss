@@ -10,7 +10,7 @@
 
 	.aside {
 		padding-right: 25px;
-		border-right: 1px solid #c4c4c4;
+		border-right: 1px solid $gray-200;
 
 		@include respond-to(tablet) {
 			margin-bottom: 20px;
@@ -19,7 +19,7 @@
 		}
 	}
 	.content {
-		color: #95a1bb;
+		color: $gray-400;
 		
 	}
 }

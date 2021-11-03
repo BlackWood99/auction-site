@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     height: 70px;
     padding-bottom: 15px;
-    border-bottom: 2px solid #2d9cdb;
+    border-bottom: 2px solid $bluePrimary;
 
     @include respond-to(440px) {
         height: 120px;
@@ -49,9 +49,9 @@
         display: block;
         padding: 5px 25px;
         margin-left: auto;
-        border: 2px solid #2d9cdb;
+        border: 2px solid $bluePrimary;
         border-radius: 5px;
-        color: #2d9cdb;
+        color: $bluePrimary;
         font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 1px;
